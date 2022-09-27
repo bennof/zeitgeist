@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./sidemenu.css";
+import "./sidemenu.module.css";
 
 import Hamburger from "../icon/hamburger.jsx";
 
