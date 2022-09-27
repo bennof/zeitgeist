@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "./main.module.css";
 
 
 const Header = ({children, backgroundImage}) => {

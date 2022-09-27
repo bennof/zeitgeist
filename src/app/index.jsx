@@ -4,9 +4,6 @@ import SideMenu from "./sidemenu.jsx";
 import Header from "./header.jsx";
 import Main from "./main.jsx";
 
-import "./index.module.css";
-
-
 const App = ({children}) => {
     return (
         <div className="app-grid-container">

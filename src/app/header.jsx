@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "./header.module.css";
 
 import UserAccountIcon from "../icon/user-account";
 import SearchIcon from "../icon/search";
