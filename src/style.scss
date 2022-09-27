@@ -1,0 +1,196 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    box-sizing: border-box;
+
+    --font-color: #444;
+    --font-contrast-color: #fff;
+    --background-color: #fff;
+    --background-color-alt: #eee;
+    --background-color-hl: #dadada;
+    --border-color: #aaa;
+
+    --primary-color: rgb(75, 103, 176);
+    --success-color: rgb(74, 111, 72);
+    --warning-color: rgb(210, 159, 29);
+    --error-color: rgb(96, 42, 62);
+
+    --box-radius: 0.5rem;
+    --box-shadow: 0 10px 20px rgba(125, 125, 125, 0.4);
+    --box-shadow-hover: 0 10px 20px rgba(125, 125, 125, 0.7);
+
+    color: var(--font-color);
+    stroke: var(--font-color);
+}
+  
+/* LAYOUT */
+.primary {
+    color: var(--primary-color);
+}
+.success {
+    color: var(--success-color);
+}
+.warning {
+    color: var(--warning-color);
+}
+.error {
+    color: var(--error-color);
+}
+
+  
+  
+a {
+    color: var(--font-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+ 
+  
+ul.nav {
+    display: block;
+    padding: 0.5rem 1rem ;
+}
+
+ul.nav > li {
+    display: block;
+}
+
+ul.nav a {
+    text-decoration: none;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+  
+ 
+h1 { font-size: 2em;}  
+
+blockquote {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-column-break-inside: avoid;
+    box-sizing: border-box;
+    border-radius: var(--box-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    padding: 24px;
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: var(--box-radius);
+}
+
+label {
+    font-size: x-small;
+    position: relative;
+    top:-0.2em;
+    left: 0.5em;
+    width: 1px;
+    background-color: var(--background-color);
+}
+
+input, textarea {
+    margin-top: 1.2em;
+    outline: none;
+    border: 1px solid var(--border-color);
+    border-radius: var(--box-radius);
+    flex: 1;
+    padding: 0.8em;
+}
+
+input:focus,
+input:hover {
+    border-color: var(--primary-color);
+}
+
+button,
+input[type=submit] {
+    border: none;
+}
+
+button.primary,
+input[type=submit].primary {
+    background-color: var(--primary-color);
+    color: var(--font-contrast-color);
+}
+
+button.success,
+input[type=submit].success {
+    background-color: var(--success-color);
+    color: var(--font-contrast-color);
+}
+
+button.warning,
+input[type=submit].warning {
+    background-color: var(--warning-color);
+    color: var(--font-contrast-color);
+}
+
+button.error,
+input[type=submit].error {
+    background-color: var(--error-color);
+    color: var(--font-contrast-color);
+}
+
+button:hover,
+input[type=submit]:hover {
+    box-shadow: var(--box-shadow-hover);
+}
+
+table {
+    margin: 20px auto;
+    border-radius: var(--box-radius);
+    box-shadow: var(--box-shadow);
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+tr {
+    background-color: var(--background-color);
+}
+
+tr:nth-child(2n) {
+    background-color: var(--background-color-alt);
+} 
+
+tr:hover {
+    background-color: var(--background-color-hl);
+}
+
+td {
+    padding: 8px;
+    border: 1px solid var(--border-color);
+}
+
+th {
+    padding: 12px 8px;
+    border: 1px solid var(--border-color);
+    background-color: var(--primary-color);
+    color: var(--font-contrast-color);
+}
+
+
+article section.reference {
+    font-size: smaller;
+}
+
+@import "./app/index.scss";

@@ -1,0 +1,25 @@
+.app-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 50px;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    height: 100vh;
+}
+
+@media only screen and (min-width: 46.875em) {
+    .app-grid-container {
+        grid-template-columns: 240px 1fr;
+        grid-template-areas:
+            "sidenav header"
+            "sidenav main"
+            "sidenav footer";
+    }
+}
+
+@import "./footer.scss";
+@import "./header.scss";
+@import "./main.scss";
+@import "./sidemenu.scss";
