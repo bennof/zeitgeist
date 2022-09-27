@@ -4,7 +4,7 @@ import SideMenu from "./sidemenu.jsx";
 import Header from "./header.jsx";
 import Main from "./main.jsx";
 
-import "./app.css";
+import "./index.css";
 
 
 const App = ({children}) => {
