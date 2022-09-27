@@ -1,0 +1,104 @@
+.header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 1em;
+    background-color: var(--background-color,#fff);
+    transition: all 0.5s;
+}
+
+.header > div {
+    margin-left: 16px;
+    border-bottom: 1px solid #ffffff00 ;
+}
+
+.header > div:hover {
+    color: var(--primary-color);
+    stroke: var(--primary-color);
+    border-bottom: 1px solid var(--border-color) ;
+}
+
+.header > div:first-child {
+    margin-left: 42px;
+}
+
+.header__search {
+    position: relative;
+}
+
+.header__search-field {
+    display:flex;
+    flex-direction: row;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 1s;
+    position: absolute;
+    border-radius: var(--box-radius);
+    right:-10px;
+    top:-5px;
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-color);
+    margin:0;
+    padding:0;
+}
+
+.header__search input[type="search"] {
+    border: none;
+    outline: none;
+    flex:0;
+    margin: 2px;
+}
+
+.header__search button {
+    border: none;
+    outline: none;
+    border-radius: var(--box-radius);
+    background-color: var(--primary-color);
+    color: var(--font-contrast-color);
+    stroke: var(--font-contrast-color);
+    flex: 0;
+}
+
+.header__search:hover .header__search-field {
+    visibility:visible;
+    opacity: 1;
+    width: auto;
+}
+
+.header__avatar {
+    position: relative;
+    z-index: 950;
+}
+
+.header__avatar-menu {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+    top:1.5em;
+    right: -1px;
+    color: var(--font-color);
+    border-radius: var(--box-radius);
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-color);
+    z-index: 920;
+}
+
+.header__avatar-menu .nav{
+    margin: 0;
+}
+
+.header__avatar:hover .header__avatar-menu{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+@media only screen and (min-width: 46.875em) {
+    .header > div:first-child {
+        margin-left: 16px;
+    }
+}

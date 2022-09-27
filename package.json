@@ -1,0 +1,18 @@
+{
+  "name": "zeitgeist",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":  "esbuild app.jsx --outfile=app.js --bundle --minify --sourcemap --format=esm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Benjamin Benno Falkner <bennof@falkner.xyz>",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "^0.15.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
