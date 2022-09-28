@@ -43,6 +43,7 @@
     box-shadow: var(--box-shadow);
     overflow: hidden;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .overviewcard:hover {
@@ -90,6 +91,7 @@
     cursor: pointer;
     text-overflow: ellipsis;
     padding: 24px;
+    text-decoration: none;
 }
 
 .card:hover {
